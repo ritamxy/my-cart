@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    count: 0
+    count: this.props.value
   };
 
   // renderTags() {
@@ -18,7 +18,6 @@ class Counter extends Component {
   // }
 
   handleIncrement = product => {
-    console.log(product);
     this.setState({ count: this.state.count + 1 });
   };
 
